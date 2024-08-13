@@ -5,3 +5,4 @@ class TextCommand:
     suggest_idea = "Предложить идею"
 
     start = "/start"
+    send = "send"

@@ -15,10 +15,7 @@ router.message.filter(OnlyPersonalMessageFilter())
 
 
 @router.message(CommandStart(), AnyStateClearMessageFilter())
-async def start_handler(message: Message, state: FSMContext) -> None:
-    if await state.get_state() is not None:
-        await state.clear()
-
+async def start_handler(message: Message) -> None:
     temp_i18n = "Что вы хотите сделать?"
 
     await message.answer(

@@ -22,3 +22,7 @@ class SuggestIdeaForm(StatesGroup):
 
 class AnswerForm(StatesGroup):
     text = State()
+
+
+class DirectSendForm(StatesGroup):
+    text = State()

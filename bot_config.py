@@ -15,10 +15,13 @@ class PostgresConfig:
 class BotConfig:
     token = os.getenv("BOT_TOKEN")
     admin_chat_id = -1002144923292
-    # admin_chat_id = -1001954286910  # test
+
+    admins = (
+        259687356,
+        2109522499,
+    )
 
     share_news_topic_id = 12
-    # share_news_topic_id = 2  # test
 
     command_call_topic_id = 13
     send_issue_topic_id = 6

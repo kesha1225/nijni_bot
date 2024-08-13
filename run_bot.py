@@ -16,6 +16,7 @@ from bot.handlers import (
     share_news_router,
     command_call_router,
     send_issue_router,
+    direct_send_router,
     suggest_idea_router,
 )
 
@@ -31,6 +32,7 @@ async def main():
         command_call_router,
         send_issue_router,
         suggest_idea_router,
+        direct_send_router,
     )
     bot = Bot(token=BotConfig.token)
 
