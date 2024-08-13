@@ -2,7 +2,6 @@ import asyncio
 import logging
 
 from aiogram import Bot, Dispatcher
-from aiogram.fsm.strategy import FSMStrategy
 from aiogram.types import BotCommand
 
 from bot.middlewares.clear_state import ClearStateMiddleware
@@ -45,7 +44,7 @@ async def main():
 
     _log_format = "%(asctime)s - [%(levelname)s] - %(name)s - (%(filename)s).%(funcName)s(%(lineno)d) - %(message)s"
     logging.basicConfig(level=logging.INFO, format=_log_format, encoding="utf-8")
-    # And the run events dispatching
+
     await dp.start_polling(bot)
 
 
